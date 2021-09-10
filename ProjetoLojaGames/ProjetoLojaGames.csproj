@@ -125,6 +125,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Funcionario.cs" />
     <Compile Include="Models\Jogo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
