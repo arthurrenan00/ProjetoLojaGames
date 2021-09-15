@@ -129,6 +129,7 @@
     <Compile Include="Models\Funcionario.cs" />
     <Compile Include="Models\Jogo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorio\Acoes.cs" />
     <Compile Include="Repositorio\Conexao.cs" />
   </ItemGroup>
   <ItemGroup>
