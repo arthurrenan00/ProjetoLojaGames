@@ -1,0 +1,98 @@
+﻿@model ProjetoLojaGames.Models.Funcionario
+@{
+    ViewBag.Title = "CadFunc";
+}
+
+<h2>Cadastrar Funcionário</h2>
+@using (Html.BeginForm("CadFunc", "Home", FormMethod.Post))
+{
+    @Html.ValidationSummary(true)
+<fieldset>
+    <legend>Cadastro:</legend>
+
+    <!--1-->
+    <div class="editor-label">
+        @Html.LabelFor(m => m.Cod_Func)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.Cod_Func)
+        @Html.ValidationMessageFor(m => m.Cod_Func)
+    </div>
+
+    <!--2-->
+    <div class="editor-label">
+        @Html.LabelFor(m => m.Nome_Func)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.Nome_Func)
+        @Html.ValidationMessageFor(m => m.Nome_Func)
+    </div>
+
+    <!--3-->
+    <div class="editor-label">
+        @Html.LabelFor(m => m.Cpf_Func)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.Cpf_Func)
+        @Html.ValidationMessageFor(m => m.Cpf_Func)
+    </div>
+
+    <!--4-->
+    <div class="editor-label">
+        @Html.LabelFor(m => m.Rg_Func)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.Rg_Func)
+        @Html.ValidationMessageFor(m => m.Rg_Func)
+    </div>
+
+    <!--5-->
+    <div class="editor-label">
+        @Html.LabelFor(m => m.DtNasc_Func)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.DtNasc_Func)
+        @Html.ValidationMessageFor(m => m.DtNasc_Func)
+    </div>
+
+    <!--6-->
+    <div class="editor-label">
+        @Html.LabelFor(m => m.Ende_Func)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.Ende_Func)
+        @Html.ValidationMessageFor(m => m.Ende_Func)
+    </div>
+
+    <!--7-->
+    <div class="editor-label">
+        @Html.LabelFor(m => m.Cell_Func)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.Cell_Func)
+        @Html.ValidationMessageFor(m => m.Cell_Func)
+    </div>
+
+    <!--8-->
+    <div class="editor-label">
+        @Html.LabelFor(m => m.Email_Func)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.Email_Func)
+        @Html.ValidationMessageFor(m => m.Email_Func)
+    </div>
+
+    <!--9-->
+    <div class="editor-label">
+        @Html.LabelFor(m => m.Cargo)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.Cargo)
+        @Html.ValidationMessageFor(m => m.Cargo)
+    </div>
+
+    <div>
+        <br /> <input type="submit" value="Cadastrar" name="btnenviar" />
+    </div>
+</fieldset>
+}
