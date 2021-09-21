@@ -166,15 +166,15 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\CadJogo.cshtml" />
-    <Content Include="Views\Home\SucessJogo.cshtml" />
     <Content Include="Views\Home\ListarJogo.cshtml" />
-    <Content Include="Views\Home\CadCli.cshtml" />
-    <Content Include="Views\Home\SucessCli.cshtml" />
     <Content Include="Views\Home\ListarCliente.cshtml" />
-    <Content Include="Views\Home\CadFunc.cshtml" />
-    <Content Include="Views\Home\SucessFunc.cshtml" />
     <Content Include="Views\Home\ListarFuncionario.cshtml" />
+    <Content Include="Views\Home\Jogo.cshtml" />
+    <Content Include="Views\Home\Cliente.cshtml" />
+    <Content Include="Views\Home\Funcionario.cshtml" />
+    <Content Include="Views\Home\CadJogo.cshtml" />
+    <Content Include="Views\Home\CadCli.cshtml" />
+    <Content Include="Views\Home\CadFunc.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

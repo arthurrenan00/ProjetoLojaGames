@@ -1,72 +1,9 @@
 ﻿@model ProjetoLojaGames.Models.Cliente
 @{
-    ViewBag.Title = "CadCli";
+    ViewBag.Title = "Cliente Cadastrado";
 }
 
-<h2>Cadastrar Cliente</h2>
-@using (Html.BeginForm("SucessCli", "Home", FormMethod.Post))
-{
-    @Html.ValidationSummary(true)
-    <fieldset>
-        <legend>Cadastro:</legend>
-
-        <!--1-->
-        <div class="editor-label">
-            @Html.LabelFor(m => m.Nome_Cli)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(m => m.Nome_Cli)
-            @Html.ValidationMessageFor(m => m.Nome_Cli)
-        </div>
-
-        <!--2-->
-        <div class="editor-label">
-            @Html.LabelFor(m => m.Cpf_Cli)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(m => m.Cpf_Cli)
-            @Html.ValidationMessageFor(m => m.Cpf_Cli)
-        </div>
-
-        <!--3-->
-        <div class="editor-label">
-            @Html.LabelFor(m => m.DtNasc_Cli)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(m => m.DtNasc_Cli)
-            @Html.ValidationMessageFor(m => m.DtNasc_Cli)
-        </div>
-
-        <!--4-->
-        <div class="editor-label">
-            @Html.LabelFor(m => m.Email_Cli)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(m => m.Email_Cli)
-            @Html.ValidationMessageFor(m => m.Email_Cli)
-        </div>
-
-        <!--5-->
-        <div class="editor-label">
-            @Html.LabelFor(m => m.Cell_Cli)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(m => m.Cell_Cli)
-            @Html.ValidationMessageFor(m => m.Cell_Cli)
-        </div>
-
-        <!--6-->
-        <div class="editor-label">
-            @Html.LabelFor(m => m.Ende_Cli)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(m => m.Ende_Cli)
-            @Html.ValidationMessageFor(m => m.Ende_Cli)
-        </div>
-
-        <div>
-            <br /> <input type="submit" value="Cadastrar" name="btnenviar" />
-        </div>
-    </fieldset>
-}
-
+<h2>Dados do cliente cadastrados com sucesso.</h2>
+<br />
+<p>@Html.ActionLink("Voltar", "Cliente")</p>
+<p>@Html.ActionLink("Visualizar Cliente", "ListarCliente")</p>

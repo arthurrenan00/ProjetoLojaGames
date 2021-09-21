@@ -26,10 +26,10 @@ namespace ProjetoLojaGames.Controllers
         
 
         [HttpPost]
-        public ActionResult CadJogo(Jogo jog)
+        public ActionResult CadJogo(Jogo jogo)
         {
-            ac.CadastrarJogo(jog);
-            return View(jog);
+            ac.CadastrarJogo(jogo);
+            return View(jogo);
         }
 
         public ActionResult ListarJogo()
@@ -48,10 +48,10 @@ namespace ProjetoLojaGames.Controllers
 
 
         [HttpPost]
-        public ActionResult CadCli(Cliente cli)
+        public ActionResult CadCli(Cliente cliente)
         {
-            ac.CadastrarCliente(cli);
-            return View(cli);
+            ac.CadastrarCliente(cliente);
+            return View(cliente);
         }
 
         public ActionResult ListarCliente()
